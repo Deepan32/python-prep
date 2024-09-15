@@ -3,9 +3,9 @@ import os
 # from constants import openai_key
 from langchain_openai import OpenAI
 import streamlit as st 
+from Langchain import config
 
-os.environ["OPENAI_API_KEY"]='sk-a8qdUhFqeyYvVrFoQlbJHcj6AqqWZ_TdSeZc-pWuJmT3BlbkFJ198YZ3mR_qa7PYaFVKAdKiWow3b60jtkaatymNA0wA'
-
+os.environ["OPENAI_API_KEY"]=config.openai_secret
 # streamlit framework
 
 st.title('Langchain demo')

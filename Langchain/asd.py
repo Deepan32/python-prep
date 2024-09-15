@@ -1,9 +1,9 @@
 import os
 from langchain.llms import OpenAI  # Correct import
 import streamlit as st 
+from Langchain import config
 
-# Set up the OpenAI API key
-os.environ["OPENAI_API_KEY"]='sk-a8qdUhFqeyYvVrFoQlbJHcj6AqqWZ_TdSeZc-pWuJmT3BlbkFJ198YZ3mR_qa7PYaFVKAdKiWow3b60jtkaatymNA0wA'
+os.environ["OPENAI_API_KEY"]=config.openai_secret
 # Streamlit framework setup
 st.title('Langchain Demo')
 input_text = st.text_input("Search the topic you want")
